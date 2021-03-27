@@ -2,6 +2,12 @@
   import Card from "./Card.svelte";
 
   export let name;
+  let selectedCard;
+
+  const onCardSelection = (x) => {
+    console.log(x.detail.name);
+    selectedCard = x.detail.name;
+  }
 </script>
 
 <main>
@@ -9,9 +15,15 @@
   <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build
     Svelte apps.</p>
 
-  <Card name="JS1"></Card>
-  <Card name="JS2"></Card>
-  <Card name="JS2"></Card>
+  <Card name="JS1" on:click={onCardSelection}></Card>
+  <Card name="JS2" on:click={onCardSelection}></Card>
+  <Card name="JS3" on:click={onCardSelection}></Card>
+
+  {#if selectedCard}
+    <div>
+      {selectedCard}
+    </div>
+  {/if}
 </main>
 
 <style>
