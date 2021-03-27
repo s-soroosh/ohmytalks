@@ -1,5 +1,5 @@
 <script>
-  import Card from "./Card.svelte";
+  import Card from "./TalkCard.svelte";
   import {MaterialApp, AppBar, Button, Icon, Menu, ListItem} from 'svelte-materialify';
   import {mdiMenu, mdiDotsVertical} from '@mdi/js';
 
@@ -25,25 +25,27 @@
       </div>
       <span slot="title">OH MY TALKS</span>
       <div style="flex-grow:1"/>
-<!--      <Button>Item</Button>-->
-<!--      <Menu right>-->
-<!--        <div slot="activator">-->
-<!--          <Button fab depressed>-->
-<!--            <Icon path={mdiDotsVertical}/>-->
-<!--          </Button>-->
-<!--        </div>-->
-<!--        <ListItem>Item 1</ListItem>-->
-<!--        <ListItem>Item 2</ListItem>-->
-<!--        <ListItem>Item 3</ListItem>-->
-<!--      </Menu>-->
+      <!--      <Button>Item</Button>-->
+      <!--      <Menu right>-->
+      <!--        <div slot="activator">-->
+      <!--          <Button fab depressed>-->
+      <!--            <Icon path={mdiDotsVertical}/>-->
+      <!--          </Button>-->
+      <!--        </div>-->
+      <!--        <ListItem>Item 1</ListItem>-->
+      <!--        <ListItem>Item 2</ListItem>-->
+      <!--        <ListItem>Item 3</ListItem>-->
+      <!--      </Menu>-->
     </AppBar>
     <h1>Oh my talks!</h1>
     <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build
       Svelte apps.</p>
+    <div class="talk-cards">
 
-    <Card name="JS1" on:click={onCardSelection}></Card>
-    <Card name="JS2" on:click={onCardSelection}></Card>
-    <Card name="JS3" on:click={onCardSelection}></Card>
+      <Card name="JS1" on:click={onCardSelection}></Card>
+      <Card name="JS2" on:click={onCardSelection}></Card>
+      <Card name="JS3" on:click={onCardSelection}></Card>
+    </div>
 
     {#if selectedCard}
       <div>
@@ -75,5 +77,11 @@
     main {
       max-width: none;
     }
+  }
+
+  .talk-cards {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
   }
 </style>
