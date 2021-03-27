@@ -1,4 +1,6 @@
 <script>
+  import { Button } from 'svelte-materialify';
+
   export let name;
   import {createEventDispatcher} from 'svelte';
 
@@ -12,5 +14,8 @@
 </script>
 
 <main on:click={sayHello}>
-  <p>Card {name}</p>
+  <Button>Card {name}</Button>
 </main>
+
+
+
