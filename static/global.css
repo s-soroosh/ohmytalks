@@ -4,6 +4,17 @@ html, body {
 	height: 100%;
 }
 
+#sapper {
+	height: 100%;
+}
+
+main {
+	padding: 0;
+	text-align: center;
+	max-width: 240px;
+	height: 100%;
+}
+
 body {
 	color: #333;
 	margin: 0;
