@@ -3,13 +3,15 @@
   import {createEventDispatcher} from 'svelte';
 
   export let name;
+  export let selected;
 
   const dispatch = createEventDispatcher();
 
   function sayHello() {
-    dispatch('click', {
-      name: name
-    });
+    selected = [...selected, name];
+    // dispatch('click', {
+    //   name: name
+    // });
   }
 </script>
 
@@ -20,9 +22,9 @@
     <CardSubtitle>1,000 miles of wonder</CardSubtitle>
     <CardActions>
       <Button text>Button</Button>
-<!--      <Button text fab size="small" class="ml-auto" on:click={toggle}>-->
-<!--        <Icon path={mdiChevronDown} rotate={active ? 180 : 0}/>-->
-<!--      </Button>-->
+      <!--      <Button text fab size="small" class="ml-auto" on:click={toggle}>-->
+      <!--        <Icon path={mdiChevronDown} rotate={active ? 180 : 0}/>-->
+      <!--      </Button>-->
     </CardActions>
     <!--{#if active}-->
     <!--  <div transition:slide>-->

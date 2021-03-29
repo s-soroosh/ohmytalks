@@ -42,9 +42,9 @@
       Svelte apps.</p>
     <div class="talk-cards">
 
-      <Card name="JS1" on:click={onCardSelection}></Card>
-      <Card name="JS2" on:click={onCardSelection}></Card>
-      <Card name="JS3" on:click={onCardSelection}></Card>
+      <Card name="JS1" bind:selected={selectedCard}></Card>
+      <Card name="JS2" bind:selected={selectedCard}></Card>
+      <Card name="JS3" bind:selected={selectedCard}></Card>
     </div>
 
     {#if selectedCard}
@@ -59,9 +59,7 @@
   main {
     padding: 0;
     text-align: center;
-    /*padding: 1em;*/
     max-width: 240px;
-    /*margin: 0 auto*/
     height: 100%;
 
   }
