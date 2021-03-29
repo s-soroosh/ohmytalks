@@ -7,15 +7,12 @@
 
   const dispatch = createEventDispatcher();
 
-  function sayHello() {
-    selected = [...selected, name];
-    // dispatch('click', {
-    //   name: name
-    // });
+  function selectCard() {
+    selected = name;
   }
 </script>
 
-<main on:click={sayHello}>
+<main on:click={selectCard}>
   <Card style="max-width:350px;">
     <img src="//picsum.photos/350" alt="background"/>
     <CardTitle>Card {name}</CardTitle>
