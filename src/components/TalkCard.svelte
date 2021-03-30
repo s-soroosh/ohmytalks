@@ -2,20 +2,20 @@
   import {Button, Card, CardActions, CardSubtitle, CardTitle} from 'svelte-materialify';
   import {createEventDispatcher} from 'svelte';
 
-  export let name;
+  export let course;
   export let selected;
 
   const dispatch = createEventDispatcher();
 
   function selectCard() {
-    selected = name;
+    selected = course;
   }
 </script>
 
 <main on:click={selectCard}>
   <Card style="max-width:350px;">
     <img src="//picsum.photos/350" alt="background"/>
-    <CardTitle>Card {name}</CardTitle>
+    <CardTitle>{course.title}</CardTitle>
     <CardSubtitle>1,000 miles of wonder</CardSubtitle>
     <CardActions>
       <Button text>Button</Button>
