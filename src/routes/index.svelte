@@ -5,12 +5,19 @@
 
   let selectedCard;
 
-  const onCardSelection = (x) => {
-    console.log(x.detail.name);
-    selectedCard = x.detail.name;
-  }
-
   let theme = 'dark';
+  let courses = [
+    {
+      title: "Javascript Bootcamp - Part 1",
+      link: "https://youtu.be/Pf4tdS9Sm6s",
+      keywords: ["key1", "key2", "key3"]
+    },
+    {
+      title: "Javascript Bootcamp - Part 2",
+      link: "https://youtu.be/huaWgAbdQRI",
+      keywords: ["key1", "key2", "key3"]
+    }
+  ]
 </script>
 
 
@@ -42,14 +49,14 @@
       Svelte apps.</p>
     <div class="talk-cards">
 
-      <Card name="JS1" bind:selected={selectedCard}></Card>
-      <Card name="JS2" bind:selected={selectedCard}></Card>
-      <Card name="JS3" bind:selected={selectedCard}></Card>
+      {#each courses as course}
+        <Card {course} bind:selected={selectedCard}></Card>
+      {/each}
     </div>
 
     {#if selectedCard}
       <div>
-        {selectedCard}
+        {selectedCard.title}
       </div>
     {/if}
   </MaterialApp>
