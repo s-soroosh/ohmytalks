@@ -16,6 +16,21 @@
       title: "Javascript Bootcamp - Part 2",
       link: "https://youtu.be/huaWgAbdQRI",
       keywords: ["key1", "key2", "key3"]
+    },
+    {
+      title: "Javascript Bootcamp - Part 3",
+      link: "https://youtu.be/huaWgAbdQRI",
+      keywords: ["key1", "key2", "key3"]
+    },
+    {
+      title: "Javascript Bootcamp - Part 4",
+      link: "https://youtu.be/huaWgAbdQRI",
+      keywords: ["key1", "key2", "key3"]
+    },
+    {
+      title: "Javascript Bootcamp - Part 5",
+      link: "https://youtu.be/huaWgAbdQRI",
+      keywords: ["key1", "key2", "key3"]
     }
   ]
 </script>

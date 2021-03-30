@@ -13,8 +13,8 @@
 </script>
 
 <main on:click={selectCard}>
-  <Card style="max-width:350px;">
-    <img src="//picsum.photos/350" alt="background"/>
+  <Card>
+    <img src="//picsum.photos/280" alt="background"/>
     <CardTitle>{course.title}</CardTitle>
     <CardSubtitle>1,000 miles of wonder</CardSubtitle>
     <CardActions>
