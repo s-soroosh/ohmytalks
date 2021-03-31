@@ -5,7 +5,9 @@
   export let course;
   export let selected;
 
-  const dispatch = createEventDispatcher();
+  console.log(course)
+
+  let href = `/session-details/${course.slug}`
 
   function selectCard() {
     selected = course;
@@ -13,12 +15,12 @@
 </script>
 
 <main on:click={selectCard}>
-  <Card>
+  <Card style="max-width: 350px">
     <img src="//picsum.photos/280" alt="background"/>
     <CardTitle>{course.title}</CardTitle>
-    <CardSubtitle>1,000 miles of wonder</CardSubtitle>
+    <div>{course.summary}</div>
     <CardActions>
-      <Button text>Button</Button>
+      <a {href} text>جزئیات بیشتر</a>
       <!--      <Button text fab size="small" class="ml-auto" on:click={toggle}>-->
       <!--        <Icon path={mdiChevronDown} rotate={active ? 180 : 0}/>-->
       <!--      </Button>-->
