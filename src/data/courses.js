@@ -3,7 +3,8 @@ export default [
     "slug": "javascript1",
     "title": "Javascript Bootcamp - Part 1",
     "summary": "",
-    "link": "https://youtu.be/Pf4tdS9Sm6s",
+    "description":"",
+    "link": "https://www.youtube.com/embed/Pf4tdS9Sm6s",
     "keywords": ["key1", "key2", "key3"],
     "image": "/images/js.png"
   },

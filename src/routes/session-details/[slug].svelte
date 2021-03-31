@@ -26,10 +26,10 @@
 
     </AppBar>
 
-      <iframe style="margin-top: 50px;"  width="560" height="315" src="https://www.youtube.com/embed/Pf4tdS9Sm6s"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+    <iframe style="margin-top: 50px;" width="560" height="315" src="{selectedCourse.link}"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     <h1>
       {selectedCourse.title}
     </h1>
