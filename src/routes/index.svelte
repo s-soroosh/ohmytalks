@@ -1,46 +1,13 @@
 <script>
   import Card from "../components/TalkCard.svelte";
   import {AppBar, Button, Icon, MaterialApp} from 'svelte-materialify';
+  import courses from "../data/courses.js"
   import {mdiMenu} from '@mdi/js';
 
   let selectedCard;
 
   let theme = 'dark';
-  let courses = [
-    {
-      slug: "javascript1",
-      title: "Javascript Bootcamp - Part 1",
-      summary: `
-      در این جلسه صحبت می‌کنیم که چرا به این زبان نیاز داریم و چه جاهایی استفاده می‌کنیم. در مورد ویژگی‌های کلی زبان. می‌گیم کجا و چطور می‌تونیم دستورات زبان رو وارد کنیم و خروجی رو مشاهده کنیم. قدم‌های ابتدایی استفاده از کنسول در براوزر و دولوپرز تولز رو بر می‌داریم.
-      `,
-      link: "https://youtu.be/Pf4tdS9Sm6s",
-      keywords: ["key1", "key2", "key3"]
-    },
-    {
-      title: "Javascript Bootcamp - Part 2",
-      summary: "",
-      link: "https://youtu.be/huaWgAbdQRI",
-      keywords: ["key1", "key2", "key3"]
-    },
-    {
-      title: "Javascript Bootcamp - Part 3",
-      summary: "",
-      link: "https://youtu.be/huaWgAbdQRI",
-      keywords: ["key1", "key2", "key3"]
-    },
-    {
-      title: "Javascript Bootcamp - Part 4",
-      summary: "",
-      link: "https://youtu.be/huaWgAbdQRI",
-      keywords: ["key1", "key2", "key3"]
-    },
-    {
-      title: "Javascript Bootcamp - Part 5",
-      summary: "",
-      link: "https://youtu.be/huaWgAbdQRI",
-      keywords: ["key1", "key2", "key3"]
-    }
-  ]
+
 </script>
 
 
