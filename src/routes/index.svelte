@@ -33,13 +33,16 @@
       <!--      </Menu>-->
     </AppBar>
     <div class="content">
-      <h1>Oh my talks!</h1>
-      <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build
-        Svelte apps.</p>
+      <h1 style="direction: ltr;">Oh my talks!</h1>
+      <h3>
+        ویدئوهای آموزش برنامه‌ نویسی
+      </h3>
       <div class="talk-cards">
 
         {#each courses as course}
-          <Card {course}></Card>
+          <div class="card">
+            <Card {course}></Card>
+          </div>
         {/each}
       </div>
     </div>
@@ -67,7 +70,13 @@
 
   .talk-cards {
     display: flex;
-    flex-flow: row;
+    flex-wrap: wrap;
+    /*flex-flow: row;*/
     justify-content: space-around;
+  }
+
+  .card {
+    margin: 10px;
+    flex: 0 1 calc(25% - 1em);
   }
 </style>

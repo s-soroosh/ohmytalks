@@ -47,6 +47,11 @@ label {
   display: block;
 }
 
+h3, h2, h1 {
+  font-family: Estedad !important;
+  margin: 20px;
+}
+
 input, button, select, textarea {
   font-family: Estedad !important;
   font-size: inherit;

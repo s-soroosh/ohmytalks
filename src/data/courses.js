@@ -35,6 +35,7 @@ export default [
   {
     "slug": "javascript5",
     "title": "Javascript Bootcamp - Part 5",
+    "summary":"",
     "description": `
       <p>
           در این قسمت با کلمات کلیدی async/await در جاوااسکریپت آشنا میشید.
@@ -46,6 +47,15 @@ export default [
     "link": "https://youtu.be/huaWgAbdQRI",
     "keywords": ["promise", "async", "await", "asynchronous programming"],
     "image": "/images/js.png"
+  },
+  {
+    "slug": "svelte1",
+    "title": "Svelte Bootcamp - Part 1\n",
+    "summary":"",
+    "description": "",
+    "link": "https://youtu.be/57scZ70ehuM",
+    "keywords": ["web framework", "sevelte", "SPA"],
+    "image": "/images/svelte.png"
   }
 ]
 
