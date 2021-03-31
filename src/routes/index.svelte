@@ -56,6 +56,7 @@
   @media (min-width: 640px) {
     main {
       max-width: none;
+      direction: rtl;
     }
   }
 
