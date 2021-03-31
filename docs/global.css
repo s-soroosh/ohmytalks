@@ -27,7 +27,7 @@ body {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Estedad;
+  font-family: Estedad !important;
 }
 
 a {
@@ -48,7 +48,7 @@ label {
 }
 
 input, button, select, textarea {
-  font-family: inherit;
+  font-family: Estedad !important;
   font-size: inherit;
   -webkit-padding: 0.4em 0;
   padding: 0.4em;
