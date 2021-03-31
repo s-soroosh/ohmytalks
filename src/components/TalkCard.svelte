@@ -1,6 +1,5 @@
 <script>
   import {Button, Card, CardActions, CardSubtitle, CardTitle} from 'svelte-materialify';
-  import {createEventDispatcher} from 'svelte';
 
   export let course;
   export let selected;
@@ -16,7 +15,7 @@
 
 <main on:click={selectCard}>
   <Card style="max-width: 350px">
-    <img src="//picsum.photos/280" alt="background"/>
+    <img src="{course.image}" style="max-width: 350px" alt="background"/>
     <CardTitle>{course.title}</CardTitle>
     <div>{course.summary}</div>
     <CardActions>
