@@ -2,9 +2,7 @@
   import Card from "../components/TalkCard.svelte";
   import {AppBar, Button, Icon, MaterialApp} from 'svelte-materialify';
   import courses from "../data/courses.js"
-  import {mdiMenu} from '@mdi/js';
-
-  let selectedCard;
+  // import {mdiMenu} from '@mdi/js';
 
   let theme = 'dark';
 
@@ -14,12 +12,12 @@
 <main>
   <MaterialApp theme="{theme}">
     <AppBar>
-<!--      <div slot="icon">-->
-<!--        <Button fab depressed>-->
-<!--          <Icon path={mdiMenu}/>-->
+      <!--      <div slot="icon">-->
+      <!--        <Button fab depressed>-->
+      <!--          <Icon path={mdiMenu}/>-->
 
-<!--        </Button>-->
-<!--      </div>-->
+      <!--        </Button>-->
+      <!--      </div>-->
       <span slot="title">OH MY TALKS</span>
       <div style="flex-grow:1"/>
       <!--      <Button>Item</Button>-->
@@ -40,15 +38,9 @@
     <div class="talk-cards">
 
       {#each courses as course}
-        <Card {course} bind:selected={selectedCard}></Card>
+        <Card {course}></Card>
       {/each}
     </div>
-
-    {#if selectedCard}
-      <div>
-        {selectedCard.title}
-      </div>
-    {/if}
   </MaterialApp>
 </main>
 

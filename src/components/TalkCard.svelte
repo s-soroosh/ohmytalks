@@ -4,16 +4,11 @@
   export let course;
   export let selected;
 
-  console.log(course)
-
   let href = `/session-details/${course.slug}`
 
-  function selectCard() {
-    selected = course;
-  }
 </script>
 
-<main on:click={selectCard}>
+<main>
   <Card style="max-width: 350px">
     <img src="{course.image}" style="max-width: 350px" alt="background"/>
     <CardTitle>{course.title}</CardTitle>
