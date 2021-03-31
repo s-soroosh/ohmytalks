@@ -16,32 +16,34 @@
 <main>
   <MaterialApp theme="{theme}">
     <AppBar>
-<!--      <div slot="icon">-->
-<!--        <Button fab depressed>-->
-<!--          <Icon path={mdiMenu}/>-->
+      <!--      <div slot="icon">-->
+      <!--        <Button fab depressed>-->
+      <!--          <Icon path={mdiMenu}/>-->
 
-<!--        </Button>-->
-<!--      </div>-->
+      <!--        </Button>-->
+      <!--      </div>-->
       <span slot="title">OH MY TALKS</span>
 
     </AppBar>
+    <div class="content">
 
-    <iframe style="margin-top: 50px;" width="560" height="315" src="{selectedCourse.link}"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    <h1>
-      {selectedCourse.title}
-    </h1>
+      <iframe style="margin-top: 50px;" width="560" height="315" src="{selectedCourse.link}"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+      <h1>
+        {selectedCourse.title}
+      </h1>
 
-    <p>
-      {selectedCourse.description}
-    </p>
+      <p>
+        {@html selectedCourse.description}
+      </p>
 
-    <div style="flex-grow: 1">
-      {#each selectedCourse.keywords as keyword}
-        <Chip class="ma-2 green white-text">{keyword}</Chip>
-      {/each}
+      <div style="flex-grow: 1">
+        {#each selectedCourse.keywords as keyword}
+          <Chip class="ma-2 green white-text">{keyword}</Chip>
+        {/each}
+      </div>
     </div>
   </MaterialApp>
 </main>
@@ -52,6 +54,14 @@
     main {
       max-width: none;
     }
+  }
+
+  h1 {
+    margin: 50px;
+  }
+
+  .content {
+    direction: rtl;
   }
 
 </style>
