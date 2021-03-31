@@ -1,6 +1,5 @@
 <script context="module">
-  import {AppBar, Button, Icon, MaterialApp, Chip} from 'svelte-materialify';
-  import {mdiMenu} from '@mdi/js';
+  import {AppBar, Chip, MaterialApp} from 'svelte-materialify';
   import courses from "../../data/courses.js"
 
   let selectedCourse;
@@ -22,7 +21,7 @@
 
       <!--        </Button>-->
       <!--      </div>-->
-      <span slot="title">OH MY TALKS</span>
+      <span slot="title"><a href="/" class="home-link"> OH MY TALKS</a></span>
 
     </AppBar>
     <div class="content">
@@ -62,6 +61,11 @@
 
   .content {
     direction: rtl;
+  }
+
+  .home-link {
+    color: inherit;
+    text-decoration: none;
   }
 
 </style>
