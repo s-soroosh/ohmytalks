@@ -71,7 +71,7 @@ export default [
 </p>
     </div>
     `,
-    "link": "https://youtu.be/huaWgAbdQRI",
+    "link": "https://www.youtube.com/embed/huaWgAbdQRI",
     "keywords": ["this", "type of", "const", "let", "var", "collection"],
     "image": "/images/js.png"
   },
@@ -105,7 +105,7 @@ export default [
 </p>
     </div>
     `,
-    "link": "https://youtu.be/huaWgAbdQRI",
+    "link": "https://www.youtube.com/embed/huaWgAbdQRI",
     "keywords": ["this", "object", "method", "OOP in JS"],
     "image": "/images/js.png"
   },
@@ -147,7 +147,7 @@ export default [
 
     </div>
     `,
-    "link": "https://youtu.be/huaWgAbdQRI",
+    "link": "https://www.youtube.com/embed/huaWgAbdQRI",
     "keywords": ["callback hell", "json", "fetch", "callback", "Promise"],
     "image": "/images/js.png"
   },
@@ -189,7 +189,7 @@ export default [
 </p>
     </div>
     `,
-    "link": "https://youtu.be/huaWgAbdQRI",
+    "link": "https://www.youtube.com/embed/huaWgAbdQRI",
     "keywords": ["promise", "async", "await", "asynchronous programming"],
     "image": "/images/js.png"
   },
