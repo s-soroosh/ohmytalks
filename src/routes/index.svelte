@@ -32,14 +32,16 @@
       <!--        <ListItem>Item 3</ListItem>-->
       <!--      </Menu>-->
     </AppBar>
-    <h1>Oh my talks!</h1>
-    <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build
-      Svelte apps.</p>
-    <div class="talk-cards">
+    <div class="content">
+      <h1>Oh my talks!</h1>
+      <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build
+        Svelte apps.</p>
+      <div class="talk-cards">
 
-      {#each courses as course}
-        <Card {course}></Card>
-      {/each}
+        {#each courses as course}
+          <Card {course}></Card>
+        {/each}
+      </div>
     </div>
   </MaterialApp>
 </main>
@@ -53,10 +55,13 @@
     font-weight: 100;
   }
 
+  .content {
+    direction: rtl;
+  }
+
   @media (min-width: 640px) {
     main {
       max-width: none;
-      direction: rtl;
     }
   }
 
