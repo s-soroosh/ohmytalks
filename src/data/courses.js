@@ -53,7 +53,7 @@ export default [
     "title": "Svelte Bootcamp - Part 1\n",
     "summary":"",
     "description": "",
-    "link": "https://youtu.be/57scZ70ehuM",
+    "link": "https://www.youtube.com/embed/57scZ70ehuM",
     "keywords": ["web framework", "sevelte", "SPA"],
     "image": "/images/svelte.png"
   }
