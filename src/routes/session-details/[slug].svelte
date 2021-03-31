@@ -16,12 +16,12 @@
 <main>
   <MaterialApp theme="{theme}">
     <AppBar>
-      <div slot="icon">
-        <Button fab depressed>
-          <Icon path={mdiMenu}/>
+<!--      <div slot="icon">-->
+<!--        <Button fab depressed>-->
+<!--          <Icon path={mdiMenu}/>-->
 
-        </Button>
-      </div>
+<!--        </Button>-->
+<!--      </div>-->
       <span slot="title">OH MY TALKS</span>
 
     </AppBar>
