@@ -2,10 +2,7 @@
   import {Button, Card, CardActions, CardSubtitle, CardTitle} from 'svelte-materialify';
 
   export let course;
-  export let selected;
-
   let href = `/session-details/${course.slug}`
-
 </script>
 
 <main>
