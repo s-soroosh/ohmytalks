@@ -32,6 +32,7 @@
       <!--        <ListItem>Item 3</ListItem>-->
       <!--      </Menu>-->
     </AppBar>
+    <a href="/xo">Play XO</a>
     <div class="content">
       <h1 style="direction: ltr;">Oh my talks!</h1>
       <h3>
