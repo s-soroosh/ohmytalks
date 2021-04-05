@@ -20,7 +20,7 @@ const tempUser = {
     "updated_at": "2021-04-05T15:33:29.891Z"
   }
 }
-const userStore = writable(tempUser)
+const userStore = writable(undefined)
 
 export const user = {
   subscribe: userStore.subscribe,
