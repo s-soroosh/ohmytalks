@@ -1,7 +1,8 @@
 <script>
   import Login from "../../components/Login.svelte";
-  import {user} from "../../components/store"
+  import {user, game} from "../../components/store"
   import GameSetup from "../../components/GameSetup.svelte";
+  import GameBoard from "../../components/GameBoard.svelte";
 
 </script>
 
@@ -9,10 +10,12 @@
   {#if !$user}
     <Login/>
   {/if}
-  {#if $user}
-    <GameSetup />
+  {#if $user && !$game}
+    <GameSetup/>
   {/if}
-
+  {#if $user && $game}
+    <GameBoard/>
+  {/if}
 </div>
 
 
